@@ -64,7 +64,7 @@ from huggingface_hub import hf_hub_download,HfApi
 import os
 
 # Security note: Never hardcode tokens! Use environment variables instead
-hf_token = os.getenv("HF_TOKEN", "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")  # Replace with your actual token
+hf_token = os.getenv("HF_TOKEN", "[ACCESS_TOKEN]")  # Replace with your actual token
 
 api = HfApi()
 files = api.list_repo_files(
